@@ -50,9 +50,7 @@ header {
 a{
 	color: #1c1b17;
 }
-p[role="contentinfo"] {
-	text-align: center;
-}
+
 .participation
 [role=navigation] ul li a{
 color: purple;
@@ -90,8 +88,12 @@ h3.select{
 	color:black;
 padding-top: 25px;
 }
-
+p[role="contentinfo"] {
+	text-align: center;
+	margin: 20px;
+}
 footer{
+	margin: 5px;
 	text-align: center;
 }
 @media only screen and (min-width: 1024px){
