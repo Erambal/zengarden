@@ -97,9 +97,7 @@ header {
 header:hover{
 	transform: scale(1.1);
 }
-header:hover{
-	top: -10px;
-	}
+
 	
 #zen-summary{
 	text-align: right;
@@ -118,15 +116,20 @@ h3.select{
 	color: #1c1b17;
 }
 h3.archives{
-	text-align: center;
+	text-align: left;
 	color: #1c1b17;
+	padding: 20px 25%;
+
 }
 .design-archives{
 	text-align: center;
 }
 h3.resources{
-	text-align: center;
+	text-align: left;
 	color: #1c1b17;
+	padding: 20px 25%;
+
+	
 }
 .zen-resources{
 	text-align: center;
@@ -184,6 +187,8 @@ footer{
 h3.archives{
 	margin: 1px;
 	padding: 2px;
+	text-align: center;
+
 }
 .design-archives{
 	text-align: center;
@@ -191,6 +196,7 @@ h3.archives{
 h3.resources{
 	margin-top: 10px;
 	padding: 5px;
+	text-align: center;
 }
 body{
 	margin-left: 10%;
