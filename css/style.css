@@ -44,6 +44,8 @@ header::before {
 	background-repeat: no-repeat;
     background-size: 100%;
 	opacity: 0.6;
+	transition: all .2s ease-in-out;
+
 }
 
 h1, h2, h3{
@@ -71,10 +73,6 @@ p{
 .summary p{
 	text-align: center;
 }
-
-h3:hover{
- top: -10;
-}
 .sidebar{
 	height: 100%;
 	width: 160px; /* Set the width of the sidebar */
@@ -94,9 +92,11 @@ header {
 	margin:auto;
 	width: 45%;
 	border-radius: 10px;
-	transition: all 0.3s;
+	transition: all .2s ease-in-out;
 }
-
+header:hover{
+	transform: scale(1.1);
+}
 header:hover{
 	top: -10px;
 	}
