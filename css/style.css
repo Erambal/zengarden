@@ -5,28 +5,75 @@
 	margin:0;
 	padding:0;
 }
-body{
-	background-color: #e8ebf0;
-	background: linear-gradient(rgba(255,255,255,.8), rgba(255,255,255,.8)), url("../assets/zenGardenlogo.jpg");
-	background-repeat: no-repeat;
-	background-size: 70%;
+
+html::before {
+	content: ' ';
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	min-height: 2200px;
+	z-index: 1;
+	opacity: 0.14;
+	background-image: url(https://wallpaperplay.com/walls/full/f/9/5/253662.jpg#.XatPU-ctenk.link);
+	background-repeat: repeat-y;
 	background-attachment: fixed;
 	background-position: center;
-	font-family: 'Open Sans', sans-serif;
-	color: #5f6263;
-	text-align: justify;
-	padding: 0 5% 0 20% ;
+	-ms-background-size: cover;
+	-o-background-size: cover;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
 }
+
+body{
+	margin-left: 15%;
+	font-family: 'Open Sans', sans-serif;
+	padding: 1em;
+}
+
+header::before {
+    display: inline-block;
+    position: relative;
+    top: 20px;
+    content: "";
+    width: 150px;
+    height: 113px;
+    margin: -55px 12px 0 -660px;
+    background: url(file:///C:/Users/Leann/Downloads/zenGardenlogo.svg);
+	background-repeat: no-repeat;
+    background-size: 100%;
+	opacity: 0.6;
+}
+
 h1, h2, h3{
 	font-family: 'Josefin Sans', sans-serif;
+	color: hsl(55,35%, 94%);
+	padding: 1em;
 }
+
 h1{
 	text-decoration: underline;
-	font-size: 200%;
 }
 h3{
-	text-align: right;
-	padding: 5% 0;
+	font-size: larger;
+	text-align: center;
+	background-color: #747548;
+	border-radius: 10px;
+	width: 300px;
+	margin: inherit;
+}
+
+p{
+	padding: 1em;
+}
+
+.summary p{
+	text-align: center;
+}
+
+h3:hover{
+ top: -10;
 }
 .sidebar{
 	height: 100%;
@@ -41,9 +88,19 @@ h3{
 }
 
 header {
-	text-align: right;
 	padding: 5% 0;
+	background-color: #747548;
+	text-align: center;
+	margin:auto;
+	width: 45%;
+	border-radius: 10px;
+	transition: all 0.3s;
 }
+
+header:hover{
+	top: -10px;
+	}
+	
 #zen-summary{
 	text-align: right;
 }
@@ -135,4 +192,8 @@ h3.resources{
 	margin-top: 10px;
 	padding: 5px;
 }
+body{
+	margin-left: 10%;
+}
+
 }
