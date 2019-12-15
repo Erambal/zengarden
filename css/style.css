@@ -110,6 +110,15 @@ footer{
 	margin: 5px;
 	text-align: center;
 }
-@media only screen and (min-width: 1024px){
-	
+@media only screen and (max-width: 900px){
+	.sidebar{
+		border-radius: 10px;
+		width: 100%;
+		position: relative;
+		background-color: #747548;
+		margin-bottom: 20px;
+	}
+	body{
+		padding: 0 5% 0 5%;
+	}
 }
