@@ -7,7 +7,7 @@
 }
 
 html::before {
-	content: ' ';
+	/* content: ' '; */
 	display: block;
 	position: absolute;
 	left: 0;
@@ -39,8 +39,8 @@ header::before {
     content: "";
     width: 150px;
     height: 113px;
-    margin: -55px 12px 0 -660px;
-    background: url(file:///C:/Users/Leann/Downloads/zenGardenlogo.svg);
+    margin: 0 0 40px 0px;
+    background: url(/assets/zenGardenlogo.svg);
 	background-repeat: no-repeat;
     background-size: 100%;
 	opacity: 0.6;
@@ -69,9 +69,39 @@ h3{
 p{
 	padding: 1em;
 }
+.zen-support h3 {
+	-webkit-animation-duration: 4s;
+			animation-duration: 4s;
+	-webkit-animation-iteration-count: infinite;
+			animation-iteration-count: infinite;
+	-webkit-animation-name: left-to-right;
+			animation-name: left-to-right;
+			animation-timing-function: ease-in-out;
+	background: #3991AE;
+	border-radius: 50%;
+	height: 8rem;
+	margin: 2rem 0;
+	width: 8rem;
+  }
+
+  @keyframes left-to-right {
+	0%, 10% {
+	  -webkit-transform: none;
+			  transform: none;
+	}
+	45%, 55% {
+	  -webkit-transform: translateX(76rem);
+			  transform: translateX(76rem);
+	}
+	95%, 100% {
+	  -webkit-transform: none;
+			  transform: none;
+	}
+  }
 
 .summary p{
 	text-align: center;
+	margin-top: 10px;
 }
 .sidebar{
 	height: 100%;
@@ -86,7 +116,6 @@ p{
 }
 
 header {
-	padding: 5% 0;
 	background-color: #747548;
 	text-align: center;
 	margin:auto;
@@ -104,6 +133,7 @@ header:hover{
 }
 a{
 	color: #1c1b17;
+	text-decoration: none;
 }
 
 .participation
@@ -113,11 +143,11 @@ color: purple;
 h3.select{
 	text-align: left;
 	padding: 10px;
-	color: #1c1b17;
+	color: hsl(55,35%, 94%);
 }
 h3.archives{
 	text-align: left;
-	color: #1c1b17;
+	color: hsl(55,35%, 94%);
 	padding: 20px 25%;
 
 }
@@ -126,7 +156,7 @@ h3.archives{
 }
 h3.resources{
 	text-align: left;
-	color: #1c1b17;
+	color: hsl(55,35%, 94%);
 	padding: 20px 25%;
 
 	
